@@ -16,14 +16,14 @@ import java.util.Date;
 
 import javax.xml.bind.DatatypeConverter;
 
-public final class DateConverter {
+public class DateConverter {
 
-	public static Date parseDate(final String value) {
+	public static Date parseDate(String value) {
 		return DatatypeConverter.parseDate(value).getTime();
 	}
 
-	public static String printDate(final Date value) {
-		final Calendar cal = Calendar.getInstance();
+	public static String printDate(Date value) {
+		Calendar cal = Calendar.getInstance();
 
 		cal.setTime(value);
 

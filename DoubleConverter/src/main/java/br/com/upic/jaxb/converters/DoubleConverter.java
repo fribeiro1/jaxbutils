@@ -15,13 +15,13 @@ import java.math.BigDecimal;
 
 import javax.xml.bind.DatatypeConverter;
 
-public final class DoubleConverter {
+public class DoubleConverter {
 
-	public static Double parseDouble(final String value) {
+	public static Double parseDouble(String value) {
 		return DatatypeConverter.parseDecimal(value).doubleValue();
 	}
 
-	public static String printDouble(final Double value) {
+	public static String printDouble(Double value) {
 		return DatatypeConverter.printDecimal(new BigDecimal(value));
 	}
 
